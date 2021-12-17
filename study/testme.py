@@ -13,6 +13,6 @@ def test2():
     pbar = tqdm(dic)
     for i in pbar:
         pbar.set_description('Processing '+i)
-        time.sleep(0.2)
+        time.sleep(0.5)
 if __name__ == '__main__':
     test2()
