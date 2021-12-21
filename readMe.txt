@@ -1,3 +1,19 @@
+1、生成数据库bdrs,根据table.sql生成表
+
+2、执行CatchMe.py，读取页面、写入文件，读取文件并写入数据库；
+
+3、执行db_connect.py 可显示词云
+
+安装词云对应的命令。
+pip install numpy matplotlib pillow wordcloud imageio jieba snownlp itchat -i https://pypi.tuna.tsinghua.edu.cn/simple
+
+
+
+
+
+==零散记录====================================
+
+
 1、进度条包：tqdm
 2、main方法要写在 方法的下面才能调用。
 3、配置Anaconda3
