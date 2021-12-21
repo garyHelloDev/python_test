@@ -20,3 +20,28 @@ github 获取token登陆：
 生成token的快捷链接：https://github.com/settings/tokens
  头像-》settings->Developer Settings->Personal access tokens->生成。
 note描述，下面全部勾选权限。
+
+github上传：
+git命令上传：
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/garyHelloDev/python_test.git
+git push -u origin main
+
+ssh配置：
+参考：https://docs.github.com/cn/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
+检查
+ls -al ~/.ssh
+
+
+生成
+ssh-keygen -t ed25519 -C "yourexample@xx.com"
+
+Your public key has been saved in /c/Users/xx/.ssh/id_ed25519.pub
+C:\Users\xx\.ssh\id_ed25519.pub
+
+#添加
+pbcopy < ~/.ssh/id_ed25519.pub 或者直接打开
+到github settings->ssh and gpg keys->new ssh keys 粘贴上
